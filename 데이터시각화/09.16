@@ -1,0 +1,88 @@
+getwd()
+wd <- choose.dir()
+wd <- "C:\\Users\\user\\Desktop\\3학년 2학기\\데이터시각화"
+setwd(wd)
+getwd()
+
+sum(1:100)
+?sum
+?mean
+??mean
+
+install.packages("installr")
+require(installr)
+install.R()
+check.for.updates.R()
+library(ggplot2)
+install.packages("scatterplot3d")
+library(scatterplot3d)
+
+
+z <- seq(10, 30, 0.01)
+x <- cos(z)
+y <- sin(z)
+scatterplot3d(x, y, z, highlight.3d = T,
+              col.axis = "blue", col.grid = "lightblue",
+              pch=20)
+
+
+#4-1
+abc <- 5
+.subject <- abc
+3.desk <- 3 #숫자먼저 나올 수 없어서 에러나옴
+aaa. <- 1; bbb. <- 2
+rnorm(7)
+x <- rnorm(7)
+rm(x)
+._a
+
+#4-2
+grade <- c(1,2,3,4)
+
+#4-3
+mydata <- data.frame(age=numeric(0), gender=numeric(0), weight=numeric(0))
+mydata <- edit(mydata) #근거가 남지 않아서 edit이라는 함수를 잘 사용안함.
+str(mydata)
+mydata
+
+#4-4
+getwd()
+setwd("C:\\Users\\user\\Desktop\\3학년 2학기\\데이터시각화")
+getwd()
+
+#4-5
+x <- read.table(file="파일명", header=T, sep="")
+
+x <- read.csv(file="파일명.csv", header=TRUE)
+
+
+wd <- choose.dir()
+setwd(wd)
+getwd
+list.files()
+
+#x라는 곳에 csv불러와서 저장
+x <- read.csv(file="mydata1_1.csv", header=TRUE)
+str(x)  #잘불러왔는지 확인 
+head(x)
+
+#4-8
+data()
+data(iris)
+str(iris)
+
+#4-9
+x <- c(1,2,3)
+print(x)
+
+#4-10
+x <- seq(from=0, to=1, by=0.1)
+write(x, file="output.txt") #파일 저장
+
+x <- matrix(1:20, 4, 5)
+write.table(x, file = "table.txt") #파일 저장
+
+
+
+
+
